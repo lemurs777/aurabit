@@ -32,7 +32,7 @@ function App() {
   return (
     <div className='App'>
       <Routes>
-        <Route path='/' element={<MainLayout />}>
+        <Route path='/aurabit/' element={<MainLayout />}>
           <Route index element={<HomePage />} />
           <Route path='about' element={<AboutPage />} />
           <Route path='all' element={<AllPages />} />
