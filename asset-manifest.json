@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/aurabit/static/css/main.83866701.css",
-    "main.js": "/aurabit/static/js/main.8827bd29.js",
+    "main.js": "/aurabit/static/js/main.ba0070e7.js",
     "static/media/home.png": "/aurabit/static/media/home.53d11404887242dde174.png",
     "static/media/wave.png": "/aurabit/static/media/wave.a055080dc6ac4b3afe1b.png",
     "static/media/hero-bg.png": "/aurabit/static/media/hero-bg.e2b9de3a7d0dc6765ac2.png",
@@ -135,10 +135,10 @@
     "static/media/arrow.svg": "/aurabit/static/media/arrow.c306641d3c47c2ef1517.svg",
     "static/media/select-arrow.svg": "/aurabit/static/media/select-arrow.aaa379b094380580245896df358f0034.svg",
     "main.83866701.css.map": "/aurabit/static/css/main.83866701.css.map",
-    "main.8827bd29.js.map": "/aurabit/static/js/main.8827bd29.js.map"
+    "main.ba0070e7.js.map": "/aurabit/static/js/main.ba0070e7.js.map"
   },
   "entrypoints": [
     "static/css/main.83866701.css",
-    "static/js/main.8827bd29.js"
+    "static/js/main.ba0070e7.js"
   ]
 }
