@@ -2,7 +2,7 @@
   "name": "aurabit",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lemurs777.github.io/aurabit",
+  "homepage": "https://lemurs777.github.io/aurabit/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
