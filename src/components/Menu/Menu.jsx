@@ -12,23 +12,6 @@ const Menu = ({ data, isOpen, handleClick, className }) => {
       <div className={styles.menu__body}>
 
         <ul className={styles.menu__list}>
-          <li >
-            <NavLink
-              to={'/all'}
-              className={({ isActive, isPending }) =>
-                clsx(
-                  isPending
-                    ? styles.pending
-                    : isActive
-                      ? styles.activeLink
-                      : null,
-                  styles.navLink
-                )
-              }
-            >
-              All Pages
-            </NavLink>
-          </li>
           {data.map(item => (
             <li key={item.title} onClick={handleClick}>
               <NavLink
