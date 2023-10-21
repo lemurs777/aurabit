@@ -1,0 +1,72 @@
+@import 'sass-rem';
+
+.instant {
+  padding: rem(215px 0 250px);
+
+  @media(max-width:767.98px) {
+    padding: rem(56px 0 112px);
+  }
+
+  &__inner {
+    display: flex;
+    align-items: flex-end;
+    gap: rem(26px);
+  }
+
+  &__title {
+    @media(max-width:991.98px) {
+      font-size: rem(30px);
+      font-weight: 500;
+
+      span {
+        font-weight: inherit;
+      }
+    }
+  }
+
+  &__img {
+    padding: rem(11px 0 23px);
+  }
+
+  &__content {
+    flex: 0 1 rem(492px);
+
+    @media(max-width:767.98px) {
+      flex: 1;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    color: #d3d3d3;
+  }
+
+  &__label {
+    @media(max-width:991.98px) {
+      padding: rem(20px);
+      text-align: center;
+    }
+  }
+
+  &__labelContent {
+    background: linear-gradient(253deg, #0145f5 -61.5%, #c0f 153.3%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #dcdcdc;
+    font-size: rem(40px);
+    line-height: 0.875;
+    white-space: nowrap;
+
+    @media(max-width:991.98px) {
+      font-size: rem(30px);
+    }
+
+    span {
+      color: #dcdcdc;
+      font-size: 20px;
+      line-height: 1.75;
+      background: none;
+      -webkit-text-fill-color: #dcdcdc;
+    }
+  }
+}

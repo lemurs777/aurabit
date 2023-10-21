@@ -1,0 +1,84 @@
+@import 'sass-rem';
+@import '../../../../assets/styles/helpers/mixins';
+
+.statistic {
+  @include frame;
+  padding: rem(9px 22px);
+
+  @media(max-width:767.98px) {
+    padding: rem(20px);
+  }
+
+  &__head {
+    margin-bottom: rem(12px);
+  }
+
+  &__title {
+    color: #fff;
+    padding-left: rem(12px);
+  }
+
+}
+
+.table {
+  color: #EDEDED;
+
+  &__head,
+  &__tr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .table {
+
+      &__th,
+      &__td {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+
+        &:first-child {
+          text-align: left;
+        }
+
+        &:last-child {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  &__head {}
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: rem(5px);
+  }
+
+  &__tr {
+    position: relative;
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      border-radius: rem(21px);
+      background: linear-gradient(270deg, rgba(29, 119, 254, 0.50) 0%, rgba(219, 0, 255, 0.00) 100%);
+    }
+
+  }
+
+  &__th {
+    margin-bottom: rem(12px);
+    padding: rem(0 12px);
+  }
+
+  &__td {
+    padding: rem(8px 12px 7px);
+
+
+  }
+
+
+}

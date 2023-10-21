@@ -1,0 +1,120 @@
+@import 'sass-rem';
+
+.howStart {
+  padding: rem(110px 0 75px);
+  position: relative;
+
+  @media(max-width:767.98px) {
+    padding-top: 0;
+  }
+
+  &::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+
+    width: 1660.955px;
+    height: 1505.987px;
+    content: '';
+    background: url('../../assets/images/howStart/circle.png') center/cover no-repeat;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 400 !important;
+
+    span {
+      font-weight: 600 !important;
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    gap: rem(10px 35px);
+    counter-reset: item;
+    list-style: decimal;
+
+    @media(max-width:991.98px) {
+      flex-direction: column;
+    }
+  }
+}
+
+.item {
+  border-radius: rem(23px);
+  border: 1px solid rgba(95, 95, 95, 0.15);
+  background: rgba(217, 217, 217, 0.01);
+  backdrop-filter: blur(7px);
+  padding: rem(48px 25px 25px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: rem(40px);
+  position: relative;
+
+  @media(max-width:991.98px) {
+    padding-top: rem(36px);
+
+  }
+
+  &::before {
+    content: counter(item);
+    counter-increment: item;
+    color: rgba(255, 255, 255, 0.1);
+    font-size: rem(90px);
+    font-weight: 250;
+    position: absolute;
+    line-height: 1;
+    top: rem(22px);
+    left: rem(25px);
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+
+    @media(min-width:767.98px) {
+      gap: rem(27px);
+    }
+  }
+
+  &__title {
+    font-size: rem(30px);
+    font-weight: 500;
+  }
+
+  &__subtext {
+    color: #a5a5a5;
+    font-size: rem(16px);
+
+    @media(max-width:767.98px) {}
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: rem(25px);
+    line-height: 1;
+  }
+
+  &__info {
+    color: rgba(220, 220, 220, 0.5);
+    font-size: rem(25px);
+  }
+
+  &__quantity {
+    background: linear-gradient(253deg, #0145f5 -61.5%, #c0f 153.3%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: rem(40px);
+  }
+}

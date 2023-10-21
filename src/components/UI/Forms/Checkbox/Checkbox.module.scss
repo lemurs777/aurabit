@@ -1,0 +1,58 @@
+@import 'sass-rem';
+
+.checkbox {
+  position: relative;
+  padding-left: rem(50px);
+  display: flex;
+  align-items: center;
+  //height: rem(42px);
+  line-height: 1.78;
+  color: #fff;
+  user-select: none;
+  font-size: rem(16px);
+
+  input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+
+    &:checked+span {
+
+      &::after {
+        transform: scale(1);
+
+      }
+    }
+  }
+
+  span {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: rem(38px);
+    height: rem(36px);
+    border-radius: rem(9px);
+    border: 2px solid rgba(124, 123, 123, 0.8);
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15.5px);
+
+    &::after {
+      position: absolute;
+      left: rem(2px);
+      top: rem(2px);
+      transform: scale(0);
+      transition: transform 0.2s ease;
+      border-radius: rem(4.5px);
+      background: #818196;
+      box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(15.5px);
+      width: calc(100% - 4px);
+      height: calc(100% - 4px);
+      content: '';
+    }
+  }
+}

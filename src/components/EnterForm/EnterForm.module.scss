@@ -1,0 +1,188 @@
+@import 'sass-rem';
+
+.enter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+
+  &__block {
+    padding: rem(30px);
+    border-radius: 9px;
+    border: 1px solid rgba(95, 95, 95, 0.15);
+    background: linear-gradient(90deg, rgba(39, 44, 146, 0.15) 0.05%, rgba(80, 80, 80, 0.00) 50.52%, rgba(96, 37, 142, 0.08) 99.95%);
+    width: calc(100% - rem(30px));
+
+
+    @media(min-width:768px) {
+
+      width: rem(400px);
+    }
+
+    @media(max-width:767.98px) {
+      padding: rem(15px);
+    }
+  }
+
+  &__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__inner {
+    max-width: rem(840px);
+    width: 100%;
+    position: relative;
+    z-index: 5;
+  }
+
+  &__title {
+    color: #eee;
+    text-align: center;
+    margin-bottom: rem(10px);
+
+    @media(max-width:767.98px) {
+      font-family: Russo One;
+    }
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 9px;
+    border: 1px solid rgba(95, 95, 95, 0.15);
+    background: linear-gradient(90deg, rgba(39, 44, 146, 0.15) 0.05%, rgba(80, 80, 80, 0.00) 50.52%, rgba(96, 37, 142, 0.08) 99.95%);
+    padding: rem(20px 25px);
+    position: relative;
+    gap: rem(100px);
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: rem(6px);
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 357px;
+      background-color: rgba(182, 179, 188, 0.10);
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: rem(13px);
+  }
+
+  &__checkbox {
+    color: #C9C8C8;
+    font-size: rem(14px);
+
+    span {
+      border-width: rem(1px);
+    }
+  }
+
+  &__btn {
+    border-radius: 16px;
+    text-align: center;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: rem(53px);
+    gap: rem(15px);
+
+    @media(max-width:767.98px) {
+      height: rem(43px);
+    }
+  }
+
+  &__submit {
+    box-shadow: 0px -4px 10px 0px rgba(83, 91, 122, 0.15), 0px 5px 12px 0px rgba(0, 0, 0, 0.25);
+    padding: rem(9px);
+    font-size: rem(16px);
+    background: radial-gradient(circle at 100% 100%, #222534 0, #222534 15px, transparent 15px) 0% 0%/16px 16px no-repeat,
+      radial-gradient(circle at 0 100%, #222534 0, #222534 15px, transparent 15px) 100% 0%/16px 16px no-repeat,
+      radial-gradient(circle at 100% 0, #222534 0, #222534 15px, transparent 15px) 0% 100%/16px 16px no-repeat,
+      radial-gradient(circle at 0 0, #222534 0, #222534 15px, transparent 15px) 100% 100%/16px 16px no-repeat,
+      linear-gradient(#222534, #222534) 50% 50%/calc(100% - 2px) calc(100% - 32px) no-repeat,
+      linear-gradient(#222534, #222534) 50% 50%/calc(100% - 32px) calc(100% - 2px) no-repeat,
+      linear-gradient(#49516e 0%, transparent 100%);
+  }
+
+  &__btn {}
+
+  &__google {
+    padding: rem(7px);
+    //border: 1px solid #BCA3BF;
+    background: linear-gradient(180deg, #3B3547 0%, #4A4359 100%);
+    box-shadow: 0px -8px 20px 0px rgba(83, 91, 122, 0.15), 0px 5px 12px 0px rgba(0, 0, 0, 0.25);
+    font-size: rem(14px);
+    text-transform: uppercase;
+    position: relative;
+    position: relative;
+
+    &::before {
+      content: "";
+      padding: rem(1px);
+      border-radius: inherit;
+      background: linear-gradient(to bottom, #BCA3BF, #4A4359);
+      -webkit-mask:
+        linear-gradient(green 0 0) content-box,
+        linear-gradient(red 0 0);
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude;
+      position: absolute;
+      inset: 0;
+    }
+
+    img {
+      width: rem(36px);
+      height: rem(36px);
+      flex: 0 0 rem(36px);
+
+      @media(max-width:767.98px) {
+        height: rem(28px);
+        width: rem(28px);
+        flex: 0 0 rem(28px);
+      }
+    }
+  }
+
+  &__bottom {
+    padding-top: rem(11px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(10px);
+    color: #C9C8C8;
+
+    font-size: rem(16px);
+  }
+
+  &__login {
+    text-decoration: underline;
+
+    &:hover {
+      color: #fff;
+    }
+
+  }
+
+  &__forgot {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: rem(16px);
+    text-align: center;
+
+    &:hover {
+      text-decoration: underline;
+      color: #FFF;
+    }
+  }
+}

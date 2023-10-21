@@ -1,0 +1,118 @@
+@import 'sass-rem';
+@import '../../../../assets/styles/helpers/mixins';
+
+.balance {
+  @include frame;
+  width: rem(438px);
+  flex: 0 1 auto;
+  padding: rem(23px);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+
+  @media(max-width:767.98px) {
+    width: 100%;
+    padding: rem(23px 20px);
+  }
+
+  &__title {
+    color: #fff;
+
+    @media(max-width:991.98px) {
+      font-size: rem(16px);
+    }
+  }
+
+  &__empty {
+    flex: 1;
+    color: #EDEDED;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    color: #F8F8F8;
+    font-size: rem(30px);
+    line-height: 1;
+
+    span {
+      display: inline-block;
+      margin-left: 1em;
+      background: linear-gradient(94deg, #477BFF 3.18%, #8000FF 98.78%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: rem(20px);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding: rem(28px 0);
+    gap: rem(16px);
+    flex: 1;
+  }
+
+  &__text {
+    color: #FFF;
+    font-size: rem(16px);
+    margin-bottom: rem(12px);
+    line-height: normal;
+
+    @media(min-width:768px) {
+      text-align: justify;
+
+    }
+
+    @media(max-width:767.98px) {}
+  }
+
+  &__btns {
+    display: flex;
+    gap: rem(10px);
+  }
+
+  &__btn {
+    width: 100%;
+    height: rem(53px);
+  }
+
+  &__btnIcon {
+    right: rem(22px);
+
+    @media(max-width:767.98px) {
+      right: rem(10px);
+    }
+  }
+}
+
+.item {
+  font-size: rem(14px);
+  line-height: 1;
+
+  &__title {
+    color: #EDEDED;
+    margin-bottom: rem(6px);
+  }
+
+  &__row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: rem(10px);
+  }
+
+  &__date {
+    color: rgba(237, 237, 237, 0.30);
+  }
+
+  &__sum {
+    color: #01BC8D;
+    text-align: right;
+  }
+}

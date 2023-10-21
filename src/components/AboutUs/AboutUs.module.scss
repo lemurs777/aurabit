@@ -1,0 +1,148 @@
+@import 'sass-rem';
+
+.about {
+  &__title {
+    @media(max-width:767.98px) {
+      font-weight: 400;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: rem(115px);
+    margin-bottom: rem(147px);
+
+    @media(max-width:767.98px) {
+      gap: rem(80px);
+      margin-bottom: rem(71px);
+    }
+
+    .item {
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+
+        .item {
+          &__text {
+            color: #c7c7c7;
+          }
+        }
+      }
+    }
+  }
+
+  &__pdf {
+    width: 100%;
+    max-width: rem(236px);
+  }
+}
+
+.video {
+  margin-bottom: rem(128px);
+
+  @media(max-width:991.98px) {
+    margin-bottom: rem(98px);
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    gap: rem(40px);
+
+    @media(max-width:991.98px) {
+      flex-direction: column-reverse;
+      gap: rem(35px);
+    }
+  }
+
+  &__text {
+    text-align: justify;
+    color: #a9a9a9;
+
+    &:not(:last-child) {
+      margin-bottom: rem(40px);
+    }
+  }
+
+  &__frame {
+    position: relative;
+    display: inline-block;
+    flex: 0 0 rem(553px);
+    width: rem(553px);
+    height: rem(332px);
+
+    @media(max-width:991.98px) {
+      margin: 0 auto;
+      width: fit-content;
+      height: fit-content;
+      flex: auto;
+    }
+
+  }
+
+  &__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+
+    @media(max-width:767.98px) {
+      width: rem(125px);
+      height: rem(125px);
+
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &:hover {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+  }
+
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: rem(40px);
+
+  &__img {
+    margin-bottom: rem(20px);
+  }
+
+  &__content {
+    max-width: rem(482px);
+  }
+
+  &__title {
+    margin-bottom: rem(50px);
+    font-size: rem(40px);
+    font-weight: 700;
+
+    @media(max-width:991.98px) {
+      font-size: rem(30px);
+      display: block;
+      text-align: center;
+      margin: 0 auto rem(40px);
+      max-width: rem(293px);
+      line-height: normal;
+
+    }
+  }
+
+  &__text {
+    color: #d2d2d2;
+    text-align: justify;
+
+    p+p {
+      padding-top: rem(50px);
+
+      @media(max-width:767.98px) {
+        padding-top: rem(20px);
+      }
+    }
+  }
+}

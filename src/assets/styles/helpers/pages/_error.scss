@@ -1,0 +1,62 @@
+@import 'sass-rem';
+
+.error {
+  position: relative;
+  overflow: hidden;
+
+  &::after,
+  &::before {
+    position: absolute;
+    content: '';
+    width: 2327px;
+    height: 2327px;
+    border-radius: 50%;
+  }
+
+  &::after {
+    top: rem(-270px);
+    transform: translateX(50%);
+    right: 0;
+    background: radial-gradient(49.2% 49.2% at 50% 50%, rgba(173, 0, 255, 0.14) 0%, rgba(173, 0, 255, 0.00) 100%);
+  }
+
+  &::before {
+    transform: translateX(-50%);
+    left: 0%;
+    background: radial-gradient(49.2% 49.2% at 50% 50%, rgba(0, 102, 255, 0.14) 0%, rgba(0, 102, 255, 0.00) 100%);
+    bottom: rem(-270px);
+  }
+
+  &__inner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(25px);
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    background: linear-gradient(92deg, #BD00FF -15.06%, #0038FF 122.38%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: justify;
+    font-size: rem(60px);
+    display: inline-block;
+
+    @media(max-width:767.98px) {
+      font-size: rem(30px);
+    }
+  }
+
+  &__btn {
+    min-width: rem(303px);
+    border-width: rem(7px);
+
+    @media(min-width:768px) {
+      font-size: rem(30px);
+    }
+  }
+}

@@ -1,0 +1,137 @@
+@import 'sass-rem';
+
+.invest {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: rem(170px);
+
+    @media(max-width:991.98px) {
+      gap: rem(53px);
+    }
+
+    .item {
+      &:nth-child(even) {
+        .item {
+          &__row {
+            @media(min-width:992px) {
+              flex-direction: row-reverse;
+            }
+          }
+
+          &__title {
+            @media(min-width:992px) {
+              font-size: rem(60px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.item {
+  &__title {
+    background: linear-gradient(92deg, #0085ff -48.95%, #bb00ea 95.49%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Urbanist;
+    font-size: rem(40px);
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: rem(50px);
+    line-height: 1.5;
+    max-width: rem(485px);
+
+    @media(max-width:991.98px) {
+      font-size: rem(30px);
+      text-align: center;
+      margin-bottom: rem(30px);
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: rem(30px);
+
+    @media(max-width:991.98px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__content {}
+
+  &__text {
+    text-align: justify;
+    color: #b8b8b8;
+
+    @media(max-width:991.98px) {
+      font-size: rem(16px);
+    }
+
+    span {
+      color: #b8b8b8;
+      font-size: rem(26px);
+      line-height: 134.615%;
+      font-weight: 600;
+
+      @media(max-width:991.98px) {
+        font-size: rem(16px);
+      }
+    }
+
+    p+p {
+      padding-top: rem(50px);
+
+      @media(max-width:991.98px) {
+        padding-top: rem(2rem);
+      }
+    }
+  }
+
+  &__img {
+    flex: 0 0 50%;
+  }
+
+  &__labels {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(10px);
+
+    @media(max-width:991.98px) {
+      padding-top: rem(25px);
+    }
+  }
+
+  &__label {
+    border-radius: 23px;
+    border: 1px solid rgba(95, 95, 95, 0.15);
+    background: rgba(217, 217, 217, 0.01);
+    backdrop-filter: blur(7px);
+    padding: rem(28px 44px);
+    text-align: center;
+    color: #d8d8d8;
+    max-width: rem(258px);
+    width: 100%;
+
+    @media(max-width:991.98px) {
+      line-height: 1;
+      font-size: rem(16px);
+      padding: rem(25px 20px);
+    }
+  }
+
+  &__counter {
+    background: linear-gradient(253deg, #0145f5 -61.5%, #c0f 153.3%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: rem(40px);
+
+    margin-bottom: rem(10px);
+
+  }
+}

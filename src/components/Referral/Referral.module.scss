@@ -1,0 +1,111 @@
+@import 'sass-rem';
+
+.referral {
+  padding-top: rem(180px);
+  margin-bottom: rem(280px);
+
+  @media(max-width:767.98px) {
+    padding-top: rem(22px);
+    margin-bottom: rem(36px);
+  }
+
+  &__title {
+    text-align: center;
+    font-family: Urbanist;
+
+    @media(min-width:768px) {
+      font-size: rem(60px);
+      font-weight: 700;
+      background: linear-gradient(92deg, #0085ff -48.95%, #bb00ea 95.49%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      span {
+        font-weight: 600;
+        color: #d4d3db;
+        -webkit-text-fill-color: #d4d3db;
+      }
+    }
+
+    @media(max-width:767.98px) {
+      color: #D4D3DB;
+      font-size: rem(30px);
+      font-weight: 400;
+      line-height: normal;
+
+    }
+
+
+  }
+
+  &__text {
+    color: #c6c6c6;
+    text-align: center;
+    margin: rem(70px) auto;
+    max-width: rem(600px);
+
+    @media(max-width:767.98px) {
+      margin: rem(36px auto 40px);
+      font-size: rem(16px);
+    }
+  }
+
+  &__slider {
+    position: relative;
+
+  }
+
+  &__navs {
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - rem(60px));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media(min-width:768px) {
+      display: none;
+    }
+  }
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: rem(530px);
+  gap: rem(56px);
+
+  @media(max-width:767.98px) {
+    border-radius: rem(9px);
+    background: rgba(217, 217, 217, 0.03);
+    padding: rem(43px 24px 64px);
+    gap: rem(40px);
+  }
+
+  &__title {
+    color: #c6c6c6;
+    text-align: center;
+    font-size: rem(30px);
+    line-height: 116.667%;
+    font-family: Urbanist;
+
+    @media(max-width:767.98px) {
+      order: -1;
+    }
+  }
+
+  &__text {
+    //flex: 1 1 100;
+    margin-top: auto;
+    color: #c6c6c6;
+    text-align: justify;
+
+    @media(max-width:767.98px) {
+      line-height: 1.35;
+    }
+  }
+}

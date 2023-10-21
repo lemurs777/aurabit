@@ -1,0 +1,40 @@
+@import 'sass-rem';
+
+.search {
+  color: #fff;
+  font-size: rem(16px);
+  line-height: 1;
+  border-radius: 9px;
+  border: 1px solid rgba(95, 95, 95, 0.15);
+  background: rgba(80, 80, 80, 0.05);
+  padding: rem(7px 24px 16px);
+
+  &__title {
+    margin-bottom: rem(6px);
+  }
+
+  &__form {
+    display: flex;
+    gap: rem(14px);
+    height: rem(39px);
+
+    input {
+      padding: rem(10px 18px);
+      width: 100%;
+      border-radius: rem(9px);
+      background: linear-gradient(102deg,
+          rgba(217, 217, 217, 0.25) 0%,
+          rgba(217, 217, 217, 0.1) 0.01%,
+          rgba(217, 217, 217, 0.05) 101.02%);
+    }
+  }
+
+  &__btn {
+    font-family: Russo One;
+    border-radius: 9px;
+    border: 1px solid #4A526F;
+    background: linear-gradient(180deg, #232634 0.01%, #212432 100%);
+    box-shadow: 0px -4px 10px 0px rgba(83, 91, 122, 0.15), 0px 5px 12px 0px rgba(0, 0, 0, 0.25);
+    padding: rem(8px 29px);
+  }
+}

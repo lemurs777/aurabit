@@ -1,0 +1,77 @@
+@import 'sass-rem';
+@import '../../../../assets/styles/helpers/mixins';
+
+.total {
+  @media(min-width:768px) {
+    width: rem(315px);
+
+  }
+
+  &__cards {
+    display: flex;
+    gap: rem(10px);
+
+    @media(min-width:768px) {
+      flex-direction: column;
+
+    }
+  }
+}
+
+.card {
+  padding: rem(35px);
+  @include frame;
+  line-height: 1;
+  min-height: rem(118px);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 100px;
+
+  @media(max-width:767.98px) {
+    background-image: none !important;
+    padding: rem(20px 18px);
+    min-height: auto;
+  }
+
+  &__head {
+    @media(min-width:768px) {
+      display: flex;
+      align-items: center;
+      gap: rem(12px);
+
+    }
+
+    @media(max-width:767.98px) {
+      text-align: center;
+    }
+  }
+
+  &__inner {
+    @media(max-width:767.98px) {
+      text-align: center;
+    }
+  }
+
+  &__name {
+    color: rgba(255, 255, 255, 0.60);
+
+    @media(max-width:767.98px) {
+      font-size: rem(14px);
+      margin-bottom: rem(10px);
+    }
+  }
+
+  &__bonus {
+    color: #01BC8D;
+
+    @media(max-width:767.98px) {
+      display: none;
+    }
+  }
+
+  &__current {
+    font-size: rem(30px);
+    color: #F8F8F8;
+  }
+}

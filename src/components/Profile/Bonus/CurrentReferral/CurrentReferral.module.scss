@@ -1,0 +1,82 @@
+@import 'sass-rem';
+@import '../../../../assets/styles/helpers/mixins';
+
+.referral {
+  padding: rem(29px);
+  @include frame;
+  line-height: 1;
+
+  @media(max-width:767.98px) {
+    padding: rem(21px 25px);
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: rem(33px);
+  }
+
+  &__title {
+    color: #EDEDED;
+  }
+
+  &__percents,
+  &__levels {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(10px);
+  }
+
+  &__percents {
+    color: #F8F8F8;
+    font-size: rem(40px);
+    margin-bottom: rem(14px);
+
+    .referral__percent {
+      &:nth-child(2) {
+        color: rgba(248, 248, 248, 0.80);
+      }
+
+      &:nth-child(3) {
+        color: rgba(248, 248, 248, 0.60);
+      }
+
+      &:nth-child(4) {
+        color: rgba(248, 248, 248, 0.40);
+      }
+
+      &:nth-child(5) {
+        color: rgba(248, 248, 248, 0.20);
+      }
+    }
+  }
+
+  &__levels {
+    color: #ABABAB;
+    font-size: rem(16px);
+
+    .referral__level {
+      &:nth-child(2) {
+        color: rgba(171, 171, 171, 0.80);
+      }
+
+      &:nth-child(3) {
+        color: rgba(171, 171, 171, 0.60);
+      }
+
+      &:nth-child(4) {
+        color: rgba(171, 171, 171, 0.40);
+      }
+
+      &:nth-child(5) {
+        color: rgba(171, 171, 171, 0.20);
+      }
+    }
+  }
+
+  &__progressDescription {
+    color: #E3E3E3;
+    font-size: rem(16px);
+  }
+}

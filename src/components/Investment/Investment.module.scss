@@ -1,0 +1,91 @@
+@import 'sass-rem';
+
+.investment {
+  padding: rem(75px 0);
+
+  @media(max-width:767.98px) {
+    padding: 0;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: rem(22px);
+
+    @media(max-width:767.98px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__img {
+    flex: 0 0 rem(552px);
+
+    @media(max-width:1100px) {
+      flex: 0 0 50%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: rem(50px);
+
+    @media(max-width:767.98px) {
+      gap: rem(35px);
+    }
+  }
+
+  &__title {
+    @media(max-width:767.98px) {
+      font-weight: 600;
+    }
+  }
+
+  &__subtitle {
+    color: #a9a9a9;
+    font-weight: 700;
+    text-align: justify;
+
+    @media(max-width:767.98px) {
+      font-size: rem(16px);
+    }
+  }
+
+  &__text {
+    color: #a9a9a9;
+    text-align: justify;
+
+    @media(max-width:767.98px) {
+      font-size: rem(16px);
+      line-height: 1.68;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    gap: rem(15px);
+
+    .investment__btn:last-child {
+      &::before {
+        background: linear-gradient(to right, #0085ff 0%, #ff00c7 50%, #0085ff 100%);
+        background-size: 200% auto;
+      }
+
+      &:hover {
+        &::before {
+          background-position: right center;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    max-width: rem(194px);
+    width: 100%;
+  }
+}

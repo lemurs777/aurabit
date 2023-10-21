@@ -1,0 +1,77 @@
+@import 'sass-rem';
+
+.header {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(rem(25px));
+  position: fixed;
+  top: 0;
+  height: 100%;
+  left: 0;
+  z-index: 12;
+  width: 100%;
+  height: auto;
+  max-height: rem(80px);
+
+  @media(max-width:767.98px) {
+    background-color: #030814;
+  }
+
+  &__inner {
+    padding: rem(8px 0 7px);
+    display: flex;
+    align-items: center;
+    gap: rem(49px);
+
+    @media(max-width:1100px) {
+      gap: rem(20px);
+    }
+
+    @media(max-width:767.98px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__menu {
+    //margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .2s ease-in-out;
+    flex: 1;
+    gap: rem(64px 20px);
+
+    @media(max-width:767.98px) {
+      position: fixed;
+      right: -100%;
+      top: 0;
+      height: 100vh;
+      padding: rem(60px 40px);
+      width: 100vw;
+      background: #0D0D0D;
+      backdrop-filter: blur(60px);
+      //flex-direction: column-reverse;
+      //align-items: flex-end;
+      //justify-content: flex-end;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: start;
+      grid-auto-rows: min-content;
+      overflow-y: auto;
+    }
+  }
+}
+
+.mobileMenu {
+  display: none;
+  position: relative;
+  z-index: 15;
+  flex: 0 0 rem(35px);
+
+  @media(max-width:767.98px) {
+    display: block;
+  }
+}
+
+.menuShow {
+  right: 0;
+}

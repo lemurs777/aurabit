@@ -1,0 +1,78 @@
+@import 'sass-rem';
+
+.balance {
+  overflow: hidden;
+  border-radius: 9px;
+  backdrop-filter: blur(2px);
+  padding: rem(46px 20px 32px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: rem(8px);
+  font-size: rem(14px);
+  color: #FFF;
+  line-height: 1;
+
+  @media(max-width:767.98px) {
+    padding: rem(20px 0);
+  }
+
+  &__btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(10px);
+  }
+
+  @media(min-width:768px) {
+    background: url('./totalBalansFrame.png') center/cover no-repeat;
+    border: 2px solid rgba(95, 95, 95, 0.15);
+
+  }
+
+  &__total {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: rem(50px);
+  }
+
+  &__bonus {
+    color: #01BC8D;
+  }
+
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  gap: rem(17px);
+  color: #D9D9D9;
+  text-align: center;
+  font-family: Kanit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-items: center;
+  justify-content: center;
+
+  &__img {
+
+    width: rem(64px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    height: rem(64px);
+    flex: 0 0 rem(64px);
+    border: none;
+    background: #121020;
+
+    &::before {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import 'sass-rem';
+@import '../../../../assets/styles/helpers/mixins';
+
+.transaction {
+  @include frame;
+  padding: rem(32px 16px 32px 26px);
+
+  &__title {
+    color: #EDEDED;
+    margin-bottom: rem(28px);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: rem(31px);
+    height: rem(290px);
+    overflow-y: auto;
+    padding-right: rem(10px);
+
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.30);
+      border-radius: 20px;
+    }
+  }
+}
+
+.item {
+  display: grid;
+  grid-template-columns: auto auto;
+  font-size: rem(14px);
+  gap: rem(6px);
+  line-height: 1;
+
+  &__name {
+    color: #EDEDED;
+  }
+
+  &__sum {
+    color: #01BC8D;
+  }
+
+  &__status,
+  &__sum {
+    text-align: right;
+  }
+
+  &__time,
+  &__status {
+    color: rgba(237, 237, 237, 0.30);
+  }
+
+  &__status {
+    font-size: rem(12px);
+  }
+
+  &__spending {
+    color: #F66754;
+  }
+}

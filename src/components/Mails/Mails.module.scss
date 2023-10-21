@@ -1,0 +1,49 @@
+@import 'sass-rem';
+
+.mails {
+  margin-bottom: rem(20px);
+
+  @media(max-width:767.98px) {
+    margin-bottom: rem(174px);
+  }
+
+  &__title {
+    color: #d8d8d8;
+    text-align: center;
+    margin-bottom: rem(35px);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(21px);
+
+    @media(max-width:767.98px) {
+      grid-template-columns: auto;
+    }
+  }
+}
+
+.mail {
+  text-align: center;
+  padding: rem(20px 40px);
+  border-radius: rem(9px);
+  background: rgba(217, 217, 217, 0.1);
+
+  @media(max-width:767.98px) {
+    padding: rem(20px);
+  }
+
+  &__title {
+    color: #d8d8d8;
+    text-align: center;
+    font-size: rem(30px);
+    margin-bottom: rem(14px);
+  }
+
+  &__text {
+    color: #848484;
+
+    @media(max-width:767.98px) {}
+  }
+}

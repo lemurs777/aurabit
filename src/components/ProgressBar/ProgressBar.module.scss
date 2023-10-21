@@ -1,0 +1,52 @@
+@import 'sass-rem';
+
+.progressBar {
+  &__description {
+    color: #EDEDED;
+    line-height: normal;
+    margin-bottom: rem(10px);
+  }
+
+  &__line {
+
+    background-color: transparent;
+    height: rem(16px);
+    border-radius: 16px;
+    position: relative;
+    padding: rem(4px);
+    background-image: linear-gradient(to right, #0057FF, #BD00FF), linear-gradient(to right, #0057FF, #BD00FF);
+    background-size: 100% 2px;
+    background-position: 0 100%, 0 0;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 21px;
+      border: 2px solid #0057FF;
+      border-right: none;
+      border-radius: 16px 0 0 16px;
+    }
+
+    &:after {
+      border: 2px solid #BD00FF;
+      border-left: none;
+      left: auto;
+      right: 0;
+      border-radius: 0 16px 16px 0;
+    }
+
+    span {
+      display: block;
+      height: 100%;
+      border-radius: 16px;
+      background: linear-gradient(to right, #0057FF, #BD00FF);
+    }
+  }
+}

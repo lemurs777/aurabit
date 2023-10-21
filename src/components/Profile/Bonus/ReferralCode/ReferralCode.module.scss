@@ -1,0 +1,47 @@
+@import 'sass-rem';
+@import '../../../../assets/styles/helpers/mixins';
+
+.code {
+  @include frame;
+  padding: rem(21px 25px);
+
+  &__head {
+    margin-bottom: rem(47px);
+  }
+
+  &__title {
+    color: #EDEDED;
+  }
+
+  &__qr {
+    width: rem(193px);
+    height: rem(193px);
+    overflow: hidden;
+    border-radius: rem(9px);
+    margin: 0 auto rem(21px);
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__input {
+    margin-bottom: rem(16px);
+
+    label {
+      font-size: rem(20px);
+      color: #EDEDED;
+    }
+
+    input {
+      font-size: rem(14px);
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    font-size: rem(16px);
+    color: #fff;
+  }
+}

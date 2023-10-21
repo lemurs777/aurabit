@@ -1,0 +1,64 @@
+@import 'sass-rem';
+
+.wallets {
+  height: rem(518px);
+  border-radius: 9px;
+  border: 2px solid rgba(95, 95, 95, 0.15);
+  background: rgba(80, 80, 80, 0.05);
+  backdrop-filter: blur(2px);
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 2px;
+    /* width of the entire scrollbar */
+
+  }
+
+  &::-webkit-scrollbar-track {
+    margin: rem(9px) 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.30);
+  }
+}
+
+.wallet {
+  display: flex;
+  gap: rem(18px);
+  align-items: center;
+  line-height: 1;
+  border-radius: rem(7px);
+  cursor: pointer;
+  padding: rem(21px 25px 18px 20px);
+
+  &:hover {
+    background: rgba(80, 80, 80, 0.20);
+
+  }
+
+  &__icon {
+    width: rem(46px);
+    height: rem(46px);
+    flex: 0 0 rem(46px);
+
+    img {}
+  }
+
+  &__sum,
+  &__title {
+    color: #FFF;
+  }
+
+  &__price {
+    flex: 1;
+    text-align: right;
+  }
+
+  &__transfer,
+  &__name {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: rem(14px);
+    display: inline-block;
+  }
+}

@@ -1,0 +1,95 @@
+@import 'sass-rem';
+
+.chart {
+  line-height: 1;
+  min-width: rem(210px);
+
+  @media(max-width:767.98px) {
+    text-align: center;
+  }
+
+  canvas {
+    width: rem(186px) !important;
+    height: rem(186px) !important;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__inner {
+    position: relative;
+    margin-bottom: rem(25px);
+    display: inline-block;
+
+  }
+
+  &__text {
+    padding-top: rem(10px);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+
+    span {
+      color: rgba(255, 255, 255, 0.60);
+      padding-top: rem(5px);
+      display: block;
+      font-size: rem(14px);
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: rem(10px);
+
+    @media(max-width:767.98px) {
+      justify-content: center;
+    }
+  }
+}
+
+.info {
+  color: #F8F8F8;
+  text-align: center;
+  font-family: Kanit;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: rem(12px);
+  position: relative;
+
+  &::before {
+    display: inline-block;
+    content: '';
+    background: linear-gradient(81deg, rgba(255, 255, 255, 0.10) -18.35%, rgba(255, 255, 255, 0.01) 127.69%);
+    border-radius: rem(50px);
+    border: rem(1px) solid rgba(255, 255, 255, 0.30);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(15.5px);
+    width: rem(48px);
+    height: rem(48px);
+  }
+
+
+
+  span {
+
+
+    color: #EDEDED;
+    text-align: center;
+    font-family: Kanit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

@@ -1,0 +1,78 @@
+@import 'sass-rem';
+@import '../../../../assets/styles/helpers/mixins';
+
+.news {
+  @include frame;
+  padding: rem(25px 28px);
+
+  line-height: 1;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: rem(25px);
+  }
+
+  &__title {
+    color: #EDEDED;
+  }
+
+  &__img {
+    height: rem(118px);
+    position: relative;
+    background: radial-gradient(50% 100% at 50% 100%, rgba(112, 0, 255, 0.19) 0%, rgba(15, 140, 255, 0.00) 100%);
+    border-radius: rem(4px);
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      height: 100%;
+    }
+  }
+
+  &__subtitle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #EDEDED;
+    font-size: rem(30px);
+  }
+
+  &__text {
+    height: rem(168px);
+    overflow-y: auto;
+    color: #C1C1C1;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: rem(16px);
+
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.30);
+      border-radius: 20px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #878787;
+    text-align: justify;
+    font-size: rem(16px);
+    line-height: 140.625%;
+  }
+
+  &__link {
+    &:hover {
+      text-decoration: underline;
+      color: #fff;
+    }
+  }
+}

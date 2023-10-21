@@ -1,0 +1,43 @@
+@import 'sass-rem';
+
+.modal {
+  max-width: rem(428px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &__title {
+    font-size: rem(16px);
+  }
+}
+
+.deposit {
+
+  padding-top: rem(18px);
+  width: 100%;
+  color: #FFF;
+  text-align: center;
+  font-size: rem(16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: rem(10px);
+
+
+  &__current {
+    font-family: Russo One;
+    color: #65B004;
+    font-size: rem(16px);
+    line-height: normal;
+
+    span {
+      font-family: Kanit;
+
+    }
+  }
+}

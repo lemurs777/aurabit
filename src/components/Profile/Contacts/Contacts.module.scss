@@ -1,0 +1,48 @@
+@import 'sass-rem';
+
+.contact {
+  padding: rem(30px);
+
+  &__title {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: rem(20px);
+    font-weight: 600;
+    margin-bottom: rem(33px);
+
+    @media(max-width:767.98px) {
+      font-size: rem(14px);
+      text-align: center;
+      margin-bottom: rem(25px);
+    }
+  }
+
+  &__form {
+    display: grid;
+    gap: rem(17px 35px);
+    align-items: end;
+
+    @media(min-width:768px) {
+      grid-template-columns: repeat(2, 1fr);
+
+    }
+  }
+
+  &__save {
+    border-radius: rem(16px);
+    padding: rem(10px);
+    color: #FFF;
+    font-size: rem(16px);
+    width: rem(145px);
+    height: rem(36px);
+    margin-bottom: rem(4px);
+
+    @media(max-width:767.98px) {
+      width: 100%;
+      border-radius: rem(9px);
+    }
+
+    &::before {
+      border-radius: inherit;
+    }
+  }
+}

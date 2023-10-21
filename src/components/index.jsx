@@ -1,0 +1,8 @@
+export { default as AddWallet } from './Profile/AddWallet'
+export { default as Wallets } from './Profile/Wallets'
+export { default as TotalBalance } from './Profile/TotalBalance'
+export { default as WalletBalance } from './Profile/WalletBalance'
+export { default as WalletPrice } from './Profile/WalletPrice'
+export { default as History } from './Profile/History'
+export { default as StatisticItem } from './Profile/StatisticItem'
+export { default as DoughnutChart } from './Profile/DoughnutChart'

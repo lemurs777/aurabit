@@ -1,0 +1,139 @@
+@import 'sass-rem';
+
+.investments-calculate {
+  padding: rem(200px 0 85px);
+
+  @media(max-width:767.98px) {
+    padding: rem(30px 0);
+  }
+
+  &__title {
+    margin-bottom: rem(30px);
+
+    @media(max-width:767.98px) {
+      margin-bottom: rem(10px);
+    }
+  }
+
+  &__text {
+    margin-bottom: rem(40px);
+    color: #dcdcdc;
+    text-align: center;
+    font-family: Urbanist;
+    font-size: rem(30px);
+    font-weight: 600;
+
+    @media(max-width:767.98px) {
+      font-size: rem(16px);
+      font-weight: 400;
+      margin-bottom: rem(30px);
+    }
+  }
+
+  &__trial {
+    padding-top: rem(65px);
+    margin-bottom: rem(175px);
+
+
+  }
+}
+
+.investProfile {
+  margin-bottom: rem(65px);
+
+  &__grid {
+    display: flex;
+    flex-direction: column;
+    gap: rem(10px);
+  }
+
+  &__rate {
+    padding: rem(35px 20px 52px 15px);
+    border-radius: 9px;
+    border: 1px solid rgba(95, 95, 95, 0.15);
+    background: linear-gradient(90deg, rgba(39, 44, 146, 0.15) 0.05%, rgba(80, 80, 80, 0.00) 50.52%, rgba(96, 37, 142, 0.08) 99.95%);
+  }
+
+  &__calculator {
+
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  &__trialDeposit {
+    border-radius: 9px !important;
+    border: 1px solid rgba(95, 95, 95, 0.15);
+    background: linear-gradient(90deg, rgba(39, 44, 146, 0.15) 0.05%, rgba(80, 80, 80, 0.00) 50.52%, rgba(96, 37, 142, 0.08) 99.95%);
+
+    h3 {
+      background: linear-gradient(92deg, #FD8EEB -1.64%, #8EADFD 105.75%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+.investProfileBlock {
+  @media(max-width:767.98px) {
+    padding: rem(20px);
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(10px);
+    padding: rem(48px 34px);
+    max-width: rem(990px);
+
+    @media(max-width:767.98px) {
+      flex-direction: column-reverse;
+      padding: 0;
+    }
+  }
+
+  &__title {
+    color: #FFF;
+    font-size: rem(30px);
+    line-height: 1.25;
+    margin-bottom: rem(27px);
+
+    @media(max-width:767.98px) {
+      font-size: rem(16px);
+    }
+  }
+
+  &__text {
+    color: #FFF;
+    text-align: justify;
+    font-size: rem(16px);
+    line-height: 1.625;
+
+    @media(max-width:767.98px) {
+      font-size: rem(14px);
+    }
+  }
+
+  &__content {
+    max-width: rem(591px);
+  }
+
+  &__img {}
+}
+
+.investProfileTrialBlock {
+  border: 2px solid rgba(48, 67, 117, 0.99);
+  background: linear-gradient(180deg, #181F44 0%, #080D27 100%);
+}
+
+.investment__trial {
+  margin-bottom: rem(165px);
+
+  @media(max-width:767.98px) {
+    margin-bottom: rem(65px);
+  }
+}

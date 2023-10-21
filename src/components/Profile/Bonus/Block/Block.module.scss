@@ -1,0 +1,64 @@
+@import 'sass-rem';
+@import '../../../../assets/styles/helpers/mixins';
+
+.block {
+  @include frame;
+  padding: rem(33px);
+
+  @media(max-width:767.98px) {
+    padding: rem(24px 16px);
+  }
+
+  &__text {
+    color: #EDEDED;
+    font-size: rem(16px);
+    line-height: normal;
+    margin-bottom: rem(50px);
+
+    @media(max-width:767.98px) {
+      margin-bottom: rem(33px);
+    }
+  }
+
+  &__progress {
+    position: relative;
+
+  }
+
+  &__progressLabel {
+    color: #E3E3E3;
+    font-family: Kanit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    @media(max-width:767.98px) {
+      font-size: rem(14px);
+    }
+  }
+
+  &__progressText {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #E3E3E3;
+    font-family: Russo One;
+    font-size: rem(16px);
+    line-height: normal;
+
+    @media(max-width:767.98px) {
+      font-size: rem(14px);
+      font-family: Kanit;
+
+      span {
+        display: none;
+      }
+    }
+
+    span {
+      font-family: Kanit;
+    }
+  }
+
+}

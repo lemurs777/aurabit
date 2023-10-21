@@ -1,0 +1,39 @@
+@import 'sass-rem';
+@import '../../../../assets/styles/helpers/mixins';
+
+.block {
+  @include frame;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: rem(4px);
+  text-align: center;
+  line-height: 1;
+  padding: rem(25px);
+  width: 100%;
+
+  @media(max-width:767.98px) {
+    padding: rem(18px);
+  }
+
+  &__inner {
+    max-width: rem(111px);
+  }
+
+  &__current {
+    color: #F8F8F8;
+    font-size: rem(40px);
+    line-height: normal;
+
+    @media(max-width:767.98px) {
+      line-height: 1;
+    }
+  }
+
+  &__text {
+    color: #ABABAB;
+    font-size: rem(16px);
+    line-height: 93.5%;
+  }
+}

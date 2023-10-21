@@ -1,0 +1,359 @@
+@import 'sass-rem';
+
+.calculator {
+  line-height: normal;
+
+  //&__inner {
+  position: relative;
+
+  @media(min-width:768px) {
+
+
+    &::after,
+    &::before {
+      position: absolute;
+      width: rem(220px);
+      height: rem(211px);
+      content: '';
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &::before {
+      background-image: url('../../assets/images/page/investment/coin2.png');
+      bottom: rem(-47px);
+      left: 0;
+      transform: translateX(-50%);
+    }
+
+    &::after {
+      background-image: url('../../assets/images/page/investment/coin1.png');
+      right: 0;
+      top: rem(-7px);
+      transform: translate(50%, 0%);
+    }
+
+  }
+
+  &__content {
+    background: linear-gradient(90deg,
+        rgba(39, 44, 146, 0.15) 0.05%,
+        rgba(80, 80, 80, 0) 50.52%,
+        rgba(96, 37, 142, 0.08) 99.95%);
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 1;
+    border-radius: rem(31px);
+    border: rem(1px) solid rgba(95, 95, 95, 0.15);
+    padding: rem(24px 47px 18px 22px);
+    display: flex;
+
+    @media(max-width:1100px) {
+      flex-direction: column;
+
+    }
+
+    @media(max-width:767.98px) {
+      border-radius: rem(9px);
+      padding: rem(21px 20px);
+    }
+  }
+
+  &__col {
+    flex: 0 0 50%;
+
+    &:nth-child(1) {
+      padding-right: rem(22px);
+
+      @media(max-width:1100px) {
+        padding-right: 0;
+        margin-bottom: rem(33px);
+      }
+    }
+
+    &:nth-child(2) {
+      padding-left: rem(26px);
+      position: relative;
+
+      @media(max-width:1100px) {
+        padding-left: 0;
+        padding-top: rem(24px);
+      }
+
+      &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: rem(3px);
+        background-color: #0e102e;
+        content: '';
+
+        @media(max-width:1100px) {
+          height: rem(3px);
+          width: 100%;
+          background-color: rgba(255, 255, 255, 0.05);
+        }
+      }
+    }
+  }
+
+}
+
+.amount {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(22px);
+
+    .amountItem {
+      &:first-child {
+        grid-column: 1 / span 2;
+
+        .amountItem {
+          &__price {
+            color: #1f9bf5;
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    text-align: center;
+    padding-top: rem(25px);
+  }
+
+  &__btn {
+    max-width: rem(273px);
+    width: 100%;
+    color: #BEC9FF;
+    border-radius: rem(17px);
+    background: linear-gradient(180deg, rgba(36, 52, 115, 0.50) 0.01%, rgba(24, 39, 99, 0.50) 100%);
+    box-shadow: 0px -4px 18px 0px rgba(29, 40, 91, 0.50), 0px 12px 34px 0px rgba(0, 0, 0, 0.40);
+    font-size: rem(16px);
+    height: rem(50px);
+  }
+}
+
+.profit {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16px);
+
+  &__title {
+    color: #e4e4e4;
+    line-height: 146%;
+    /* 29.2px */
+    margin-bottom: 1rem;
+
+    @media(max-width:767.98px) {
+      display: none;
+    }
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(8px);
+
+    @media(max-width:767.98px) {
+      grid-template-columns: auto;
+    }
+  }
+}
+
+.profitItemDeposit {
+  @media(max-width:767.98px) {
+    display: none;
+  }
+}
+
+.profitItem {
+  @media(max-width:767.98px) {}
+
+  &__head {
+    margin-bottom: rem(8px);
+  }
+
+  &__title {
+    color: #fff;
+    font-size: rem(16px);
+  }
+
+  &__block {
+    display: flex;
+    gap: rem(7px);
+    align-items: center;
+
+
+
+
+  }
+
+  &__blockSelect {
+    @media(max-width:767.98px) {
+      display: block;
+
+    }
+  }
+}
+
+.amountItem {
+  line-height: 1;
+
+  @media(max-width:767.98px) {
+
+    display: none;
+
+    &:nth-child(2),
+    &:nth-child(5) {
+      display: block;
+    }
+  }
+
+  &__title {
+    color: #c9c9c9;
+    margin-bottom: rem(6px);
+    font-size: rem(16px);
+  }
+
+  &__price {
+    color: #f8f8f8;
+    font-size: rem(25px);
+
+    @media(min-width:768px) {
+      font-family: Russo One;
+
+    }
+
+    span {
+      text-transform: uppercase;
+      color: #c9c9c9;
+      font-family: 'Kanit', sans-serif;
+      font-size: rem(16px);
+
+      @media(max-width:767.98px) {
+        display: none;
+      }
+    }
+  }
+
+  &__cost {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: rem(16px);
+
+    @media(min-width:768px) {
+      font-family: Russo One;
+    }
+
+  }
+}
+
+.radio {
+  position: relative;
+  padding-left: rem(50px);
+  display: flex;
+  align-items: center;
+  height: rem(42px);
+  color: #fff;
+  user-select: none;
+  font-size: rem(16px);
+
+  &__input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+
+    &:checked+.radio {
+      &__custom {
+        &::after {
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+    }
+  }
+
+  &__custom {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: rem(44px);
+    height: rem(39px);
+    border-radius: 10px;
+    border: 2px solid rgba(124, 123, 123, 0.8);
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15.5px);
+
+    &::after {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      transition: transform 0.2s ease;
+      border-radius: 7px;
+      background: #818196;
+      box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(15.5px);
+      width: calc(100% - 4px);
+      height: calc(100% - 4px);
+      content: '';
+    }
+  }
+}
+
+.radioCompounding {
+  .radio__custom {
+    &::after {
+      background: #2c2c8d;
+    }
+  }
+}
+
+.amountInput {
+  padding: rem(10px 19px);
+  border-radius: rem(10px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15.5px);
+  color: #fff;
+  font-family: Russo One;
+  font-size: 16px;
+
+  @media(max-width:767.98px) {
+    width: 100%;
+    font-family: Kanit;
+  }
+}
+
+.inputRange {
+  font-size: rem(16px);
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+  }
+
+  input {
+    width: 100%;
+    -webkit-appearance: none;
+    height: rem(5px);
+    background: #b6b3bc;
+    border-radius: 5px;
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: rem(18px);
+      height: rem(18px);
+      background: #b6b3bc;
+      border-radius: 50%;
+    }
+  }
+}

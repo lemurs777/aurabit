@@ -1,0 +1,66 @@
+@import 'sass-rem';
+
+.promo {
+  padding: rem(18px 24px);
+  height: rem(340px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: rem(10px);
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  background: url('./gift-bg.png') center/cover no-repeat;
+  color: #FFF;
+  border-radius: rem(9px);
+
+  @media(max-width:767.98px) {}
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: rem(181px);
+    height: rem(200px);
+    background: url('./gift.png') center/cover no-repeat;
+    left: 50%;
+    transform: translateX(-50%);
+    top: rem(-20px);
+
+  }
+
+  &__name {
+    font-size: rem(16px);
+  }
+
+  &__input {
+    text-align: center;
+    font-size: rem(16px);
+    border-radius: 1em;
+    padding: rem(10px);
+    border: 2px solid rgba(255, 255, 255, 0.30);
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(15.5px);
+    width: 100%;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.28);
+
+    }
+  }
+
+  &__btn {
+    height: rem(46px);
+    text-transform: uppercase;
+    width: 100%;
+    border-radius: rem(16px);
+    font-size: rem(16px);
+    background: linear-gradient(180deg, #3B3547 0%, #4A4359 100%);
+    color: #FFF;
+
+    &::before {
+      border-radius: rem(16px);
+    }
+
+    &:hover {}
+  }
+}

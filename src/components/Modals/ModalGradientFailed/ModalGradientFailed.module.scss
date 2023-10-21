@@ -1,0 +1,32 @@
+@import 'sass-rem';
+
+.modal {
+  max-width: rem(428px);
+  width: 100%;
+  min-height: rem(406px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &__text {
+    color: #FFF;
+    text-align: center;
+    font-family: Kanit;
+    font-size: rem(16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 168%;
+    /* 26.88px */
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    gap: rem(19px);
+    justify-content: center;
+  }
+
+
+
+}

@@ -1,0 +1,41 @@
+@import 'sass-rem';
+
+.subscribe {
+  display: flex;
+
+  border-radius: 9px;
+  padding: rem(5px);
+  //max-width: rem(433px);
+  background: linear-gradient(102deg,
+      rgba(217, 217, 217, 0.25) 0%,
+      rgba(217, 217, 217, 0.1) 0.01%,
+      rgba(217, 217, 217, 0.05) 101.02%);
+  backdrop-filter: blur(10px);
+
+  input {
+    padding: rem(8px 10px);
+    color: #fff;
+    line-height: 170.5%;
+    /* 27.28px */
+    width: 100%;
+    font-size: rem(16px);
+
+    &::placeholder {
+      color: #7c7c7c;
+    }
+  }
+
+  &__btn {
+    border-radius: 7px;
+    padding: rem(15.5px) !important;
+    min-width: rem(122px);
+    color: #fff !important;
+    line-height: 168%;
+    font-size: rem(16px);
+    max-width: rem(128px);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,19 @@
+@import 'sass-rem';
+.btn {
+	border-radius: 17px;
+	border: 1px solid #273677;
+	background: linear-gradient(
+		180deg,
+		rgba(36, 52, 115, 0.5) 0.01%,
+		rgba(24, 39, 99, 0.5) 100%
+	);
+	box-shadow: 0px -4px 18px 0px rgba(29, 40, 91, 0.5),
+		0px 12px 34px 0px rgba(0, 0, 0, 0.4);
+	padding: rem(16.5px 33px);
+	text-transform: uppercase;
+	color: #bec9ff;
+	&:hover {
+		background: linear-gradient(180deg, #364789 0%, #1e2d6b 100%);
+		color: #fff;
+	}
+}

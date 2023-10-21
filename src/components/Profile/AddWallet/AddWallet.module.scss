@@ -1,0 +1,43 @@
+@import 'sass-rem';
+
+.btn {
+  width: 100%;
+  padding: rem(39px);
+  border-radius: rem(9px);
+  background: rgba(80, 80, 80, 0.05);
+  position: relative;
+  display: flex;
+  height: rem(102px);
+  transition: .3s ease-in-out;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: rgba(80, 80, 80, 0.20);
+
+    img {
+      opacity: 1;
+    }
+  }
+
+  img {
+    transition: .3s ease-in-out;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: #FFF;
+    font-family: Russo One;
+  }
+
+}

@@ -1,0 +1,8 @@
+.about {
+  @media(max-width:767.98px) {
+    background-image: url('../../assets/images/mobile/about-heroBg.png') !important;
+    background-size: contain;
+    background-position-y: top;
+    min-height: 375px;
+  }
+}

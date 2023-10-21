@@ -1,0 +1,75 @@
+@import 'sass-rem';
+
+.roadmap {
+  padding-top: rem(50px);
+
+  @media(max-width:767.98px) {
+    padding-top: 0;
+  }
+
+  &__title {
+    font-family: 'Russo One', sans-serif;
+
+    @media(max-width:767.98px) {
+      font-family: Urbanist;
+      font-weight: 500;
+
+      span {
+        font-weight: inherit;
+      }
+    }
+  }
+
+  &__map {
+    background: url('../../assets/images/page/about/roadmap.png') center/contain no-repeat;
+    width: 1386.047px;
+    height: 1100.017px;
+    margin: 0 auto rem(180px);
+    position: relative;
+
+    @media(max-width:1425px) {
+      width: rem(1000px);
+      height: rem(700px);
+    }
+
+    @media(max-width:991.98px) {
+      width: rem(750px);
+      height: rem(500px);
+    }
+
+    @media(max-width:767.98px) {
+      background-image: url('../../assets/images/mobile/roadmap.png') !important;
+      height: 2537px;
+      width: auto;
+      margin-bottom: rem(112px);
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 667.035px;
+      height: 667.035px;
+      border-radius: 50%;
+      background: radial-gradient(44.43% 44.43% at 50% 50%,
+          rgba(0, 117, 255, 0.17) 0%,
+          rgba(0, 117, 255, 0) 100%);
+      left: 0;
+      top: 0;
+      transform: translate(-50%, -25%);
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 502.315px;
+      height: 502.315px;
+      border-radius: 50%;
+      background: radial-gradient(44.43% 44.43% at 50% 50%,
+          rgba(189, 0, 255, 0.17) 0%,
+          rgba(189, 0, 255, 0) 100%);
+      right: 0;
+      bottom: 0;
+      transform: translate(35%, 15%);
+    }
+  }
+}

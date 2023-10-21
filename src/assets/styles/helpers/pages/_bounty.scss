@@ -1,0 +1,35 @@
+.bounty-banner {
+  background-image: url('../../../images/page/bounty/banner.png') !important;
+
+  @media(max-width:767.98px) {
+    background-image: url('../../../images/mobile/invest-banner.png') !important;
+    padding: rem(30px 0 47px);
+  }
+
+  &__inner {
+    gap: rem(65px);
+
+    @media(max-width:767.98px) {
+      align-items: flex-start;
+    }
+  }
+}
+
+.bounty {
+  &__last {
+    @media(max-width:767.98px) {
+      margin-bottom: rem(88px);
+    }
+  }
+
+  &__title {
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  &__row-reverse {
+    flex-direction: row-reverse;
+  }
+}

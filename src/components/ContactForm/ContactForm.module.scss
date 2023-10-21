@@ -1,0 +1,9 @@
+@import 'sass-rem';
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: rem(16px);
+	button {
+		width: fit-content;
+	}
+}

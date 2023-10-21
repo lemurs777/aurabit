@@ -1,0 +1,49 @@
+@import 'sass-rem';
+
+.login {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #eee;
+  gap: rem(32px 53px);
+
+  @media(min-width:768px) {
+    font-size: rem(16px);
+  }
+
+  @media(max-width:1100px) {
+    column-gap: rem(20px);
+  }
+
+  @media(max-width:767.98px) {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.loginBtn {
+  font-weight: 600;
+  //font-size: rem(16px);
+  background: linear-gradient(to bottom, #fff 0%,
+      #fff 50%, #C96DF6 0%, #9C5AF8 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: auto 200%;
+  transition: .3s;
+  white-space: nowrap;
+
+  &:hover,
+  &.activeLink {
+    background-position: bottom center;
+
+  }
+
+  &.activeLink {
+    background: linear-gradient(#C96DF6 0%, #9C5AF8 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    //background-size: auto 200%;
+    font-weight: 600;
+  }
+}

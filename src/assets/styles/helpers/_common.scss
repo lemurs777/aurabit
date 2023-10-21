@@ -1,0 +1,145 @@
+@import 'sass-rem';
+
+.text-gradient {
+  background: linear-gradient(89deg, #0085ff -25.22%, #c0f 96.81%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Urbanist', sans-serif;
+  display: inline-block;
+}
+
+//.walletSelect {
+//  &-container {
+//    width: 100%;
+//  }
+
+//  &__single-value {
+//    color: #fff !important;
+//    font-family: Russo One !important;
+//    font-size: 16px !important;
+//    margin: 0 !important;
+//  }
+
+//  &__control {
+//    border-radius: 10px !important;
+//    background: rgba(255, 255, 255, 0.1) !important;
+//    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1) !important;
+//    backdrop-filter: blur(15.5px) !important;
+//    border: none !important;
+//  }
+
+//  &__control--menu-is-open {
+//    .walletSelect__indicators {
+//      transform: rotateX(180deg);
+//    }
+//  }
+
+//  &__value-container {}
+
+//  &__indicators {
+//    transition: transform 0.2s ease;
+//  }
+
+//  &__indicator-separator {
+//    display: none !important;
+//  }
+
+//  &__menu {}
+
+//  &__menu-list {}
+
+//  &__option {}
+//}
+
+//.frame {
+//  border-radius: rem(9px);
+//  border: 1px solid rgba(95, 95, 95, 0.15);
+//  background: linear-gradient(90deg, rgba(39, 44, 146, 0.15) 0.05%, rgba(80, 80, 80, 0.00) 50.52%, rgba(96, 37, 142, 0.08) 99.95%);
+//}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: $gridGap;
+}
+
+.frame {
+  overflow: hidden;
+  border-radius: rem(9px);
+  background-color: rgba(80, 80, 80, 0.05);
+  position: relative;
+
+  &::before {
+    content: "";
+    padding: 1px;
+    border-radius: rem(9px);
+    background: linear-gradient(to bottom, #5F5F5F26, #58585800);
+    -webkit-mask:
+      linear-gradient(green 0 0) content-box,
+      linear-gradient(red 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+}
+
+.row {
+  display: flex;
+  gap: $gridGap;
+}
+
+.col-md {
+  //flex: 0 0 50%;
+}
+
+.success {
+  color: #30D476;
+}
+
+.hideText {
+  font-size: 0;
+  line-height: 0;
+}
+
+.mobile {
+  display: none;
+
+  @media(max-width:767.98px) {
+    display: block;
+  }
+}
+
+.desktop {
+  display: block;
+
+  @media(max-width:767.98px) {
+    display: none;
+  }
+}
+
+.reverseGradient {
+  &::before {
+    background: linear-gradient(to left, #0085FF, #FF00C7);
+  }
+}
+
+.all-modal,
+.all-pages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: rem(15px);
+  margin-bottom: rem(30px);
+
+
+}
+
+.alls {
+  h2 {
+    color: #fff;
+    text-align: center;
+    font-size: rem(30px);
+    margin-bottom: rem(30px);
+  }
+}

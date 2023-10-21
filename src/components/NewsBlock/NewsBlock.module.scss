@@ -1,0 +1,55 @@
+@import 'sass-rem';
+
+.block {
+  border-radius: 9px;
+  background: rgba(60, 60, 60, 0.10);
+  backdrop-filter: blur(10px);
+  padding: rem(20px 25px);
+  display: flex;
+  flex-direction: column;
+  gap: rem(16px);
+
+  line-height: normal;
+
+  @media(max-width:767.98px) {
+    padding: rem(22px 18px);
+  }
+
+  &__header {
+    @media(max-width:767.98px) {
+      margin-bottom: rem(9px);
+    }
+  }
+
+  &__title {
+    color: #D3D3D3;
+    text-align: center;
+    font-family: Russo One;
+    font-size: rem(25px);
+
+    @media(max-width:767.98px) {
+      color: #D3D3D3;
+      font-size: rem(20px);
+      font-family: Kanit;
+    }
+  }
+
+  &__text {
+    color: #D3D3D3;
+    text-align: center;
+    font-size: rem(16px);
+    line-height: 129%;
+    //margin-bottom: rem(33px);
+    max-width: rem(455px);
+    margin: 0 auto;
+
+    @media(max-width:767.98px) {
+      line-height: 1.78;
+    }
+  }
+
+  &__body {
+    min-height: rem(120px);
+    flex: 1;
+  }
+}

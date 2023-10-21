@@ -1,0 +1,40 @@
+@import 'sass-rem';
+
+.social {
+  @media(max-width:767.98px) {
+    margin-bottom: rem(94px);
+  }
+
+  &__title {
+    margin-bottom: rem(26px);
+    color: #fff;
+    font-size: rem(30px);
+    line-height: 116.667%;
+
+    @media(max-width:767.98px) {
+      text-align: center;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: rem(22px);
+
+    @media(max-width:767.98px) {
+      justify-content: center;
+    }
+  }
+}
+
+.item {
+  transition: 0.3s;
+  transform: scale(1);
+  display: inline-block;
+
+  @media(max-width:767.98px) {}
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

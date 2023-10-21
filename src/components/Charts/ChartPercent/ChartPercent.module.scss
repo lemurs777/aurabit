@@ -1,0 +1,65 @@
+@import 'sass-rem';
+
+.chartPercent {
+  text-align: center;
+
+  &__top {
+    position: relative;
+  }
+
+  &__content {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30%;
+    gap: rem(4px);
+  }
+
+  &__icon {
+    display: inline-block;
+
+    img {
+      width: rem(211px);
+    }
+  }
+
+  &__title {
+    color: #F8F8F8;
+    text-align: center;
+    font-size: rem(30px);
+  }
+
+  &__bottom {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: rem(12px);
+  }
+
+  &__text {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-family: Kanit;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 117.5%;
+    margin: 0 auto;
+    /* 14.1px */
+    max-width: rem(106px);
+  }
+
+  &__name {
+    color: #E0DCDC;
+    line-height: 88%;
+    text-transform: uppercase;
+  }
+}

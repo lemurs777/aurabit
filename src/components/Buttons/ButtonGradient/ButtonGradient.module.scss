@@ -1,0 +1,41 @@
+@import 'sass-rem';
+$borderRadius: rem(41px);
+$borderWidth: rem(2px);
+
+.btn {
+	padding: rem(10px);
+	color: #fff;
+	font-size: rem(24px);
+	//text-transform: uppercase;
+	line-height: 168%;
+	//line-height: 1;
+	//min-width: rem(300px);
+	border-radius: $borderRadius;
+	box-shadow: 0 0 rem(21px) 0 #000;
+	border: $borderWidth solid transparent;
+	background: linear-gradient(to right, #2c2c2c 0%, #2d2d2d 50%, #2c2c2c 100%)
+			padding-box,
+		linear-gradient(to right, #ff00c7 0%, #0085ff 50%, #ff00c7 100%) border-box;
+	background-size: 200% auto;
+	transition: 0.3s ease-in-out;
+	span {
+		transition: 0.3s ease-in-out;
+		background-image: linear-gradient(
+			to right,
+			#fff 0%,
+			#fff 49.8%,
+			#0085ff 0%,
+			#ff00c7 100%
+		);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 200% auto;
+	}
+
+	&:hover {
+		span {
+			background-position: right center;
+		}
+		background-position: right center;
+	}
+}

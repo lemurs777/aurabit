@@ -1,0 +1,63 @@
+@import 'sass-rem';
+
+.bounty {
+  padding: rem(75px 0);
+
+  @media(max-width:767.98px) {
+    padding: 0 0 rem(55px);
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    gap: rem(30px);
+
+    @media(max-width:767.98px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__content {
+    max-width: rem(545px);
+    min-height: rem(379px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: rem(30px);
+  }
+
+  &__title {
+    @media(max-width:767.98px) {
+      font-weight: 600;
+    }
+  }
+
+  &__subtitle {
+    color: #c8c8c8;
+    font-weight: 700;
+    line-height: 152.249%;
+
+    @media(max-width:767.98px) {
+      font-size: rem(16px);
+    }
+  }
+
+  &__list {
+    color: #c8c8c8;
+    line-height: 186.72%;
+
+    li {
+      position: relative;
+
+      @media(max-width:767.98px) {
+        font-size: rem(16px);
+      }
+
+      &::before {
+        color: #c8c8c8;
+        display: inline-block;
+        content: '-';
+      }
+    }
+  }
+}

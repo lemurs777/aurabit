@@ -1,0 +1,50 @@
+@import 'sass-rem';
+
+.contact {
+  padding-top: rem(50px);
+  margin-bottom: rem(120px);
+  color: #fff;
+
+  @media(max-width:767.98px) {
+    padding-top: 0;
+    margin-bottom: rem(60px);
+  }
+
+  &__row {
+    display: flex;
+    gap: rem(20px);
+    justify-content: space-between;
+
+    @media(max-width:767.98px) {
+      flex-direction: column;
+    }
+  }
+
+  &__col {
+    max-width: rem(513px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 1 50%;
+
+    @media(max-width:767.98px) {
+      flex: 1;
+      max-width: none;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    margin-bottom: rem(30px);
+
+    @media(max-width:767.98px) {
+      font-size: rem(30px);
+      text-align: center;
+      margin-bottom: rem(10px);
+    }
+  }
+
+  &__text {
+    color: #b6b6b6;
+  }
+}

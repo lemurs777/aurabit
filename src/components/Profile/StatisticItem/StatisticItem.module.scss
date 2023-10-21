@@ -1,0 +1,44 @@
+@import 'sass-rem';
+
+.item {
+
+  overflow: hidden;
+  border-radius: rem(9px);
+  background-color: rgba(80, 80, 80, 0.05);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  gap: rem(8px);
+  padding: rem(28px 20px 18px);
+
+  &::before {
+    content: "";
+    padding: 1px;
+    border-radius: rem(9px);
+    background: linear-gradient(to bottom, #5F5F5F26, #58585800);
+    -webkit-mask:
+      linear-gradient(green 0 0) content-box,
+      linear-gradient(red 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    position: absolute;
+    inset: 0;
+  }
+
+  &__total {
+    color: #F8F8F8;
+    font-size: rem(30px);
+  }
+
+  &__text {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: rem(14px);
+    line-height: 117.5%;
+    max-width: rem(104px);
+    /* 16.45px */
+  }
+}

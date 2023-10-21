@@ -1,0 +1,23 @@
+@mixin frame {
+
+  overflow: hidden;
+  border-radius: rem(9px);
+  background-color: rgba(80, 80, 80, 0.05);
+  position: relative;
+
+  &::before {
+    content: "";
+    padding: 1px;
+    border-radius: inherit;
+    background: linear-gradient(to bottom, #5F5F5F26, #58585800);
+    -webkit-mask:
+      linear-gradient(green 0 0) content-box,
+      linear-gradient(red 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+
+}

@@ -1,0 +1,94 @@
+@import 'sass-rem';
+@import'sass-rem';
+
+.modal {
+  max-width: rem(428px);
+  width: 100%;
+  min-height: rem(406px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+  label {
+    display: flex;
+    align-items: center;
+    font-size: rem(16px);
+    margin-bottom: rem(4px);
+    font-family: Kanit;
+    color: #fff;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    gap: rem(10px);
+    justify-content: space-between;
+  }
+
+  &__exchange {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: rem(6px);
+    color: #FFF;
+    font-family: Russo One;
+    font-size: rem(16px);
+    font-weight: 400;
+    line-height: normal;
+
+    &>span {
+      margin-bottom: rem(10px);
+    }
+  }
+
+}
+
+.item {
+
+  font-size: rem(16px);
+  line-height: normal;
+  color: rgba(255, 255, 255, 0.70);
+
+
+
+
+  &__input {
+    color: #fff;
+    display: flex;
+    position: relative;
+
+    span {
+      position: absolute;
+      right: 0;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: inline-block;
+
+    }
+  }
+
+  input {
+    border-radius: rem(10px);
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0px rem(20px) rem(40px) 0px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(15.5px);
+    color: #fff;
+    font-family: Russo One;
+    font-size: rem(16px);
+    line-height: normal;
+    padding: rem(10px 19px);
+    width: 100%;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    appearance: none;
+
+  }
+}

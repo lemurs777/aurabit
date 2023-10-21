@@ -1,0 +1,56 @@
+@import 'sass-rem';
+
+.btn {
+  padding: rem(36px 29px 23px);
+  border-radius: 9px;
+  border-radius: 9px;
+  //background: rgb(80, 80, 80);
+  //opacity: .2;
+  background: rgba(80, 80, 80, 0.05);
+  position: relative;
+  display: flex;
+  height: rem(164px);
+  transition: .3s ease-in-out;
+  overflow: hidden;
+
+  &:hover {
+    background: rgba(80, 80, 80, 0.20);
+
+    img {
+      opacity: 1;
+    }
+
+    //opacity: 0.05;
+  }
+
+  img {
+    transition: .3s ease-in-out;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+  }
+
+  &__inner {
+    max-width: rem(190px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: #FFF;
+    font-weight: 600;
+  }
+
+  &__text {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: rem(16px);
+    line-height: 114.5%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    //align-items: center;
+    justify-content: center;
+  }
+}

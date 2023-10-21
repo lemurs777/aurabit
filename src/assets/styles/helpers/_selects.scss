@@ -1,0 +1,446 @@
+.filter {
+  &__menu {
+    position: relative;
+    z-index: 3 !important;
+    min-width: rem(205px);
+    border-radius: 9px !important;
+    background: rgba(56, 56, 56, 0.10) !important;
+    backdrop-filter: blur(10px) !important;
+  }
+
+  &-container {
+    width: 100%;
+  }
+
+  &__option {
+    color: #FFF !important;
+    font-size: rem(16px) !important;
+    cursor: pointer !important;
+
+    &:focus,
+    &:hover {
+      background: transparent !important;
+    }
+
+    &--is-disabled {
+      background: transparent !important;
+    }
+
+    &--is-focused {
+      background: transparent !important;
+      color: #B775FA !important;
+    }
+
+    &--is-selected {
+      background: transparent !important;
+      color: #B775FA !important;
+    }
+  }
+
+  &__single-value {
+    color: #C6C6C6 !important;
+  }
+
+  &__control {
+    cursor: pointer !important;
+    border-radius: 0px !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  &__control--menu-is-open {
+    .walletSelect__indicators {
+      transform: rotateX(180deg);
+    }
+  }
+
+  &__value-container {}
+
+  &__indicators {
+    transition: transform 0.2s ease;
+  }
+
+  &__indicator-separator {
+    display: none !important;
+  }
+
+  &__menu-list {
+
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.30);
+      border-radius: 20px;
+    }
+  }
+}
+
+.mobile--lang {
+  text-align: left;
+  margin-right: auto;
+}
+
+.language {
+  &__control {
+    background-color: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+
+    &--is-focused {
+      box-shadow: none !important;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: rem(14px);
+
+    @media(max-width:767.98px) {
+      flex-direction: row-reverse;
+    }
+
+    span {
+      color: #FFF;
+      font-size: rem(16px);
+    }
+  }
+
+  &__input {
+    opacity: 0 !important;
+  }
+
+  &__value-container {
+    padding: 0 !important;
+  }
+
+  &__single-value {
+    span {
+      display: none;
+    }
+  }
+
+  &__indicators {
+    display: none !important;
+  }
+
+  &__menu {
+    width: rem(183px) !important;
+    padding: rem(24px 21px) !important;
+    background-color: rgba(128, 128, 128, 0.05) !important;
+    border: 1px solid rgba(158, 158, 158, 0.10) !important;
+    backdrop-filter: blur(20px) !important;
+    padding: 0 !important;
+
+    @media(max-width:767.98px) {
+      position: fixed !important;
+      right: 0 !important;
+      top: 60px !important;
+      border-radius: 9px !important;
+      background: rgba(217, 217, 217, 0.01) !important;
+      backdrop-filter: blur(60px) !important;
+      width: rem(280px) !important;
+      border: none !important;
+
+    }
+  }
+
+  &__menu-list {
+
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.30);
+      border-radius: 20px;
+    }
+  }
+
+  &__option {
+    cursor: pointer !important;
+
+    &:focus,
+    &:hover {
+      background: transparent !important;
+    }
+
+    &--is-disabled {
+      background: transparent !important;
+    }
+
+    &--is-focused {
+      background: transparent !important;
+
+      span {
+
+        color: #B775FA !important;
+      }
+    }
+
+    &--is-selected {
+      background: transparent !important;
+
+      span {
+
+        color: #B775FA !important;
+      }
+    }
+  }
+}
+
+.walletSelect {
+  &-container {
+    width: 100%;
+  }
+
+  &__single-value {
+    color: #fff !important;
+    font-family: Russo One !important;
+    font-size: 16px !important;
+    margin: 0 !important;
+
+    @media(max-width:767.98px) {
+      font-family: Kanit !important;
+    }
+  }
+
+  &__control {
+    border-radius: 10px !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(15.5px) !important;
+    border: none !important;
+    cursor: pointer !important;
+  }
+
+  &__control--menu-is-open {
+    .walletSelect__indicators {
+      transform: rotateX(180deg);
+    }
+  }
+
+  &__value-container {}
+
+  &__indicator {
+    @media(max-width:767.98px) {
+      padding: rem(9px 19px 9px 9px) !important;
+    }
+  }
+
+  &__indicators {
+    transition: transform 0.2s ease;
+  }
+
+  &__indicator-separator {
+    display: none !important;
+  }
+
+  &__menu {
+    background: #1D1D1D !important;
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10) !important;
+  }
+
+  &__menu-list {}
+
+  &__option {
+    cursor: pointer !important;
+    color: rgba(255, 255, 255, 0.90) !important;
+    font-family: Kanit !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+    padding-left: rem(19px) !important;
+
+    &--is-disabled {
+      background: transparent !important;
+    }
+
+    &--is-focused {
+      background: transparent !important;
+
+
+
+      color: #B775FA !important;
+
+    }
+
+    &--is-selected {
+      background: transparent !important;
+
+    }
+  }
+}
+
+.modalSelect {
+  &-container {
+    width: 100%;
+  }
+
+  &__single-value {
+    color: rgba(255, 255, 255, 0.50) !important;
+    font-family: Kanit !important;
+    font-size: rem(16px) !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+  }
+
+  &__control {
+    cursor: pointer !important;
+    border-radius: 10px !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(15.5px) !important;
+    border: none !important;
+    padding-left: rem(19px) !important;
+    padding-right: rem(17px) !important;
+  }
+
+  &__control--menu-is-open {
+    .selectModal__indicators {
+      transform: rotateX(180deg);
+    }
+  }
+
+  &__value-container {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  &__indicator {
+    padding: 0 !important;
+  }
+
+  &__indicators {
+    transition: transform 0.2s ease;
+  }
+
+  &__indicator-separator {
+    display: none !important;
+  }
+
+  &__menu {
+    background: #1D1D1D !important;
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10) !important;
+  }
+
+  &__menu-list {}
+
+  &__option {
+    cursor: pointer !important;
+    color: rgba(255, 255, 255, 0.90) !important;
+    font-family: Kanit !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+    padding-left: rem(19px) !important;
+
+    &--is-disabled {
+      background: transparent !important;
+    }
+
+    &--is-focused {
+      background: transparent !important;
+
+
+
+      color: #B775FA !important;
+
+    }
+
+    &--is-selected {
+      background: transparent !important;
+
+    }
+  }
+}
+
+.modalSelectGradient {
+  &-container {
+    width: 100%;
+  }
+
+  &__single-value {
+    color: #fff !important;
+    font-family: Kanit !important;
+    font-size: rem(16px) !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+  }
+
+  &__control {
+    cursor: pointer !important;
+    border-radius: 10px !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(15.5px) !important;
+    border: none !important;
+    padding-left: rem(19px) !important;
+    padding-right: rem(17px) !important;
+  }
+
+  &__control--menu-is-open {
+    .selectModal__indicators {
+      transform: rotateX(180deg);
+    }
+  }
+
+  &__value-container {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  &__indicator {
+    padding: 0 !important;
+  }
+
+  &__indicators {
+    transition: transform 0.2s ease;
+  }
+
+  &__indicator-separator {
+    display: none !important;
+  }
+
+  &__menu {
+    background: #1D1D1D !important;
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10) !important;
+  }
+
+  &__menu-list {}
+
+  &__option {
+    cursor: pointer !important;
+    color: rgba(255, 255, 255, 0.90) !important;
+    font-family: Kanit !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+    padding-left: rem(19px) !important;
+
+    &--is-disabled {
+      background: transparent !important;
+    }
+
+    &--is-focused {
+      background: transparent !important;
+
+
+
+      color: #B775FA !important;
+
+    }
+
+    &--is-selected {
+      background: transparent !important;
+
+    }
+  }
+}

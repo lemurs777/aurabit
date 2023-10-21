@@ -1,0 +1,11 @@
+@import 'sass-rem';
+
+.chart {
+  height: rem(200px);
+  //max-width: rem(780px);
+
+  canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
