@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/aurabit/static/css/main.dd780370.css",
-    "main.js": "/aurabit/static/js/main.3f76ec87.js",
+    "main.css": "/aurabit/static/css/main.83866701.css",
+    "main.js": "/aurabit/static/js/main.5956188e.js",
     "static/media/home.png": "/aurabit/static/media/home.53d11404887242dde174.png",
     "static/media/wave.png": "/aurabit/static/media/wave.a055080dc6ac4b3afe1b.png",
     "static/media/hero-bg.png": "/aurabit/static/media/hero-bg.e2b9de3a7d0dc6765ac2.png",
@@ -71,8 +71,6 @@
     "static/media/budget.png": "/aurabit/static/media/budget.3171339900b896ab35d0.png",
     "static/media/gift.png": "/aurabit/static/media/gift.2f2794ee27f24e2702bb.png",
     "static/media/qr.jpg": "/aurabit/static/media/qr.b6f5e8c191493fd0f348.jpg",
-    "static/media/failed.png": "/aurabit/static/media/failed.663b18ecb7de99776901.png",
-    "static/media/success.png": "/aurabit/static/media/success.0f5c1afd676c4319cb85.png",
     "static/media/yield.png": "/aurabit/static/media/yield.4b9fd16f293e3bd74a5f.png",
     "static/media/german.svg": "/aurabit/static/media/german.a16f54991359538fc992c9c7c0534b85.svg",
     "static/media/logo.svg": "/aurabit/static/media/logo.5aa5984713fe087d24889e975e02eb5c.svg",
@@ -136,11 +134,11 @@
     "static/media/close.svg": "/aurabit/static/media/close.cf5b841d13d7d077f5dcad85d7b664e7.svg",
     "static/media/arrow.svg": "/aurabit/static/media/arrow.c306641d3c47c2ef1517.svg",
     "static/media/select-arrow.svg": "/aurabit/static/media/select-arrow.aaa379b094380580245896df358f0034.svg",
-    "main.dd780370.css.map": "/aurabit/static/css/main.dd780370.css.map",
-    "main.3f76ec87.js.map": "/aurabit/static/js/main.3f76ec87.js.map"
+    "main.83866701.css.map": "/aurabit/static/css/main.83866701.css.map",
+    "main.5956188e.js.map": "/aurabit/static/js/main.5956188e.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd780370.css",
-    "static/js/main.3f76ec87.js"
+    "static/css/main.83866701.css",
+    "static/js/main.5956188e.js"
   ]
 }
