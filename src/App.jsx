@@ -41,7 +41,6 @@ function App() {
           <Route path='news' element={<NewsPage />} />
           <Route path='news2' element={<NewsPage2 />} />
           <Route path='contact' element={<ContactUsPage />} />
-          <Route path='all' element={<AllPages />} />
         </Route>
         <Route path='/registration' element={<RegistrationPage />} />
         <Route path='/terms' element={<Terms />} />
@@ -64,7 +63,7 @@ function App() {
           <Route path='help/bonus' element={<HelpBonusPage />} />
           <Route path='help/faq' element={<HelpFinancePage />} />
         </Route>
-        <Route path='*' element={<Error />} />
+        {/*<Route path='*' element={<Error />} />*/}
       </Routes>
     </div>
   )
