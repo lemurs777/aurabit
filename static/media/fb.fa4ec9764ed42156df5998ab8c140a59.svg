@@ -1,0 +1,14 @@
+<svg width="79" height="79" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="iconmonstr-facebook-5 (1)" clip-path="url(#clip0_1823_2546)">
+<path id="Vector" d="M39.5 6.58333C57.6503 6.58333 72.4167 21.3498 72.4167 39.5C72.4167 57.6503 57.6503 72.4167 39.5 72.4167C21.3498 72.4167 6.58333 57.6503 6.58333 39.5C6.58333 21.3498 21.3498 6.58333 39.5 6.58333ZM39.5 0C17.6861 0 0 17.6861 0 39.5C0 61.3139 17.6861 79 39.5 79C61.3139 79 79 61.3139 79 39.5C79 17.6861 61.3139 0 39.5 0ZM32.9167 32.9167H26.3333V39.5H32.9167V59.25H42.7917V39.5H48.7825L49.375 32.9167H42.7917V30.1747C42.7917 28.6013 43.1077 27.9792 44.6284 27.9792H49.375V19.75H41.4618C35.5434 19.75 32.9167 22.357 32.9167 27.3472V32.9167Z" fill="url(#paint0_linear_1823_2546)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1823_2546" x1="-4.50001" y1="-16.5001" x2="64.4417" y2="-30.5666" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0057FF"/>
+<stop offset="1" stop-color="#CC00FF"/>
+</linearGradient>
+<clipPath id="clip0_1823_2546">
+<rect width="79" height="79" fill="white"/>
+</clipPath>
+</defs>
+</svg>
