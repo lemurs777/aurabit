@@ -31,14 +31,14 @@ function App() {
   return (
     <div className='App'>
       <Routes>
-        <Route path='/aurabit' element={<MainLayout />}>
+        <Route path='/' element={<MainLayout />}>
           <Route index element={<HomePage />} />
-          <Route path='/about' element={<AboutPage />} />
-          <Route path='/investment' element={<InvestmentPage />} />
-          <Route path='/bounty' element={<BountyPage />} />
-          <Route path='/news' element={<NewsPage />} />
-          <Route path='/news2' element={<NewsPage2 />} />
-          <Route path='/contact' element={<ContactUsPage />} />
+          <Route path='about' element={<AboutPage />} />
+          <Route path='investment' element={<InvestmentPage />} />
+          <Route path='bounty' element={<BountyPage />} />
+          <Route path='news' element={<NewsPage />} />
+          <Route path='news2' element={<NewsPage2 />} />
+          <Route path='contact' element={<ContactUsPage />} />
         </Route>
         <Route path='/registration' element={<RegistrationPage />} />
         <Route path='/terms' element={<Terms />} />
