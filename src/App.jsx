@@ -61,7 +61,7 @@ function App() {
           <Route path='help/bonus' element={<HelpBonusPage />} />
           <Route path='help/faq' element={<HelpFinancePage />} />
         </Route>
-        {/*<Route path='*' element={<Error />} />*/}
+        <Route path='*' element={<Error />} />
       </Routes>
     </div>
   )
