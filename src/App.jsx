@@ -32,7 +32,7 @@ function App() {
     <div className='App'>
       <Routes>
         <Route path='/' element={<MainLayout />}>
-          <Route index element={<HomePage />} />
+          <Route path='/' element={<HomePage />} />
           <Route path='about' element={<AboutPage />} />
           <Route path='investment' element={<InvestmentPage />} />
           <Route path='bounty' element={<BountyPage />} />
